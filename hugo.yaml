@@ -1,0 +1,64 @@
+baseURL: "https://ahorro.powertrader.es/"
+languageCode: "es"
+title: "PowerTrader Ahorro"
+theme: "PaperMod"
+pagination:
+  pagerSize: 10
+
+params:
+  env: production
+  author: PowerTrader
+  description: "Consejos y estrategias para ahorrar en tu factura de luz."
+  keywords: [PowerTrader, ahorro energético, tarifa eléctrica, PVPC]
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "💡 PowerTrader Ahorro"
+    Content: >
+      Estrategias prácticas para reducir tu factura eléctrica.
+      Optimiza tu consumo y aprovecha las mejores tarifas del mercado.
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/"
+    - name: github
+      url: "https://github.com/"
+    - name: rss
+      url: "/index.xml"
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+menu:
+  main:
+    - identifier: inicio
+      name: Inicio
+      url: /
+      weight: 10
+    - identifier: articulos
+      name: Artículos
+      url: /posts/
+      weight: 20
+    - identifier: sobre
+      name: Sobre
+      url: /about/
+      weight: 30
+    - identifier: buscar
+      name: 🔍
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
