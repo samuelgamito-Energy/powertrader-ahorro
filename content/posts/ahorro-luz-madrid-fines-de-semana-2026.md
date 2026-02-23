@@ -1,5 +1,5 @@
 ---
-title: "Luz casi gratis en Madrid este fin de semana: lo que Selectra no te cuenta (y cómo aprovecharlo con 3 personas en casa)"
+title: "Luz casi gratis en Madrid este fin de semana: Cómo aprovecharlo con 3 personas en casa"
 date: 2026-02-22T10:00:00+01:00
 draft: false
 description: "Guía práctica para reducir la factura de luz en Madrid los fines de semana a finales de invierno 2026. Con la hidráulica a tope, la fotovoltaica batiendo récords y el gas bajando, el PVPC está más barato que nunca. Te explicamos cómo sacarle partido con 2 adultos y un adolescente en casa."
@@ -33,7 +33,7 @@ cover:
 
 ## La pregunta que todos nos hacemos un viernes por la tarde
 
-Son las 18:30 del viernes. Tu adolescente lleva la consola enchufada desde que llegó del insti, tú estás calentando la cena y tu pareja ha puesto la lavadora. Tres dispositivos hambrientos de electricidad, funcionando al mismo tiempo, justo en la franja que el mercado eléctrico tiene como *zona roja*.
+Son las 18:30 del viernes. Tu adolescente lleva la consola enchufada desde que llegó del instituto, tú estás calentando la cena y tu pareja ha puesto la lavadora. Tres dispositivos hambrientos de electricidad, funcionando al mismo tiempo, justo en la franja que el mercado eléctrico tiene como *zona roja*.
 
 **¿Y si te dijera que podrías pagar un 60% menos simplemente cambiando el horario de esa lavadora?**
 
