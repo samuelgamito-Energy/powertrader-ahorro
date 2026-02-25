@@ -57,6 +57,10 @@ menu:
       name: 🔍
       url: /search/
       weight: 40
+      - identifier: "powertrader"
+      name: "↩ Volver a PowerTrader"
+      url: "https://powertrader.es/"
+      weight: 10
 
 outputs:
   home:
