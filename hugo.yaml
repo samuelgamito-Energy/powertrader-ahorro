@@ -27,12 +27,10 @@ params:
       Optimiza tu consumo y aprovecha las mejores tarifas del mercado.
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: github
-      url: "https://github.com/"
-    - name: rss
-      url: "/index.xml"
+    - name: linkedin
+      url: "https://linkedin.com/company/power-trader"
+    - name: x
+      url: "https://x.com/PowerSPTrader"
 
   cover:
     hidden: false
