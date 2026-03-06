@@ -1,7 +1,7 @@
 ---
 title: "Precios de la Luz: 07 de Marzo 2026 · Sábado"
 description: "Boletín diario con las horas más baratas (precio solar) y caras de la electricidad. Especial Ahorro PowerTrader."
-date: 2026-03-06T20:00:00Z
+date: 2026-03-05T20:00:00Z
 layout: "boletin-ahorro"
 draft: false
 
