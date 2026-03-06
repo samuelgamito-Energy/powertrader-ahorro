@@ -623,7 +623,7 @@
         new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: Array.from({ length: 24 }, (_, i) => \`\${i}h\`),
+                labels: Array.from({ length: 24 }, (_, i) => i + "h"),
                 datasets: [{
                     data: prices,
                     backgroundColor: colors,
@@ -640,7 +640,7 @@
                         backgroundColor: '#2e2e33',
                         padding: 6,
                         cornerRadius: 6,
-                        callbacks: { label: (c) => \` \${c.raw.toFixed(2)} €/MWh\` }
+                        callbacks: { label: (c) => " " + c.raw.toFixed(2) + " €/MWh" }
                     }
                 },
                 scales: {
