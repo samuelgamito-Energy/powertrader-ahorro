@@ -10,6 +10,7 @@ params:
   assets:
     favicon: /favicon.svg
   label:
+    text: " "
     icon: /logo.svg
     iconHeight: 80
   env: production
@@ -21,6 +22,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
+  Canonical: true
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: false
