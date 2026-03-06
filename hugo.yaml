@@ -7,6 +7,9 @@ pagination:
 
 
 params:
+  label:
+    icon: /logo.svg
+    iconHeight: 32
   env: production
   author: PowerTrader
   description: "Consejos y estrategias para ahorrar en tu factura de luz."
