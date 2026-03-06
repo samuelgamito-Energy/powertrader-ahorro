@@ -395,7 +395,9 @@
     <div class="container">
         <!-- HEADER -->
         <header>
-            <div class="logo">POWER<span>TRADER</span></div>
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src="/logo.svg" alt="PowerAhorro Logo" style="height: 32px; width: auto; max-width: 250px;">
+            </div>
             <div class="header-info">
                 <h1>Guía de Consumo D+1 (PVPC)</h1>
                 <div class="badge">{{ .Params.fecha_tarjeta }}</div>
@@ -406,9 +408,12 @@
         <div class="idea-clave">
             <div class="idea-label">💡 IDEA CLAVE</div>
             <div class="idea-text">
-                Hoy encontrarás un **valle solar destacado** a **{{ .Params.valle_solar_avg }} €/MWh**. Evita consumir
-                fuertemente alrededor de las **{{ .Params.max_hour }}**, donde el precio se dispara a **{{
-                .Params.max_price }} €/MWh** (<span class="red">{{ .Params.ahorro_max_pct }}% más caro</span>).
+                Hoy encontrarás un <strong>valle solar destacado</strong> a <strong>{{ .Params.valle_solar_avg }}
+                    €/MWh</strong>. Evita consumir
+                fuertemente alrededor de las <strong>{{ .Params.max_hour }}</strong>, donde el precio se dispara a
+                <strong>{{
+                    .Params.max_price }} €/MWh</strong> (<span class="red">{{ .Params.ahorro_max_pct }}% más
+                    caro</span>).
             </div>
         </div>
 
