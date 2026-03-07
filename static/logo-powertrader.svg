@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+  <defs>
+    <style>
+      .bg { fill: #0F172A; } /* Dark Navy */
+      .text-main { fill: #FFFFFF; font-family: 'Segoe UI', sans-serif; font-weight: 800; }
+      .text-sub { fill: #94A3B8; font-family: 'Segoe UI', sans-serif; font-weight: 300; }
+      .rect-main { fill: #00AEEF; }
+    </style>
+  </defs>
+  <rect width="400" height="100" class="bg"/>
+
+  <!-- Icon: Digital Wave (Option 6 Geometry) -->
+  <!-- Adjusted Translate Y to 36 to vertically center with the text -->
+  <g transform="translate(40, 36)">
+    <rect x="-20" y="5" width="4" height="10" class="rect-main" opacity="0.4"/>
+    <rect x="-10" y="0" width="4" height="20" class="rect-main" opacity="0.6"/>
+    <rect x="0" y="-10" width="4" height="40" class="rect-main" opacity="0.8"/>
+    <rect x="10" y="-20" width="4" height="60" class="rect-main"/>
+    <rect x="20" y="-10" width="4" height="40" class="rect-main" opacity="0.8"/>
+    <rect x="30" y="0" width="4" height="20" class="rect-main" opacity="0.6"/>
+    <rect x="40" y="5" width="4" height="10" class="rect-main" opacity="0.4"/>
+  </g>
+
+  <text x="110" y="60" font-size="40" class="text-main">POWER<tspan class="text-sub">TRADER</tspan></text>
+</svg>

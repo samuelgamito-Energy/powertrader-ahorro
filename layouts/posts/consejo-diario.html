@@ -51,7 +51,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 22px 30px;
+            padding: 15px 30px;
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 22px;
@@ -59,15 +59,10 @@
             backdrop-filter: blur(16px)
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: 2px
-        }
-
-        .logo span {
-            color: var(--cyan);
-            font-weight: 300
+        .logo img {
+            height: 35px;
+            width: auto;
+            display: block;
         }
 
         .header-right {
@@ -442,11 +437,36 @@
 
         footer {
             margin-top: 40px;
-            padding: 20px;
-            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             font-size: 0.75rem;
             color: var(--dim);
             border-top: 1px solid var(--border);
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--dim);
+            transition: opacity 0.2s;
+        }
+
+        .footer-brand:hover {
+            opacity: 0.8;
+        }
+
+        .footer-brand img {
+            height: 24px;
+            width: auto;
+        }
+
+        .footer-brand span {
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -455,7 +475,9 @@
     <div class="wrap">
 
         <header>
-            <div class="logo">POWER<span>TRADER</span></div>
+            <a href="https://ahorro.powertrader.es" class="logo">
+                <img src="/logo.svg" alt="PowerAhorro">
+            </a>
             <div class="header-right">
                 <h2>Consejo Diario de Ahorro</h2>
                 <p>Previsión PVPC para Mañana · Optimiza tu Factura</p>
@@ -540,7 +562,12 @@
         </div>
 
         <footer>
-            PowerTrader AI · Precios PVPC publicados por REE · Basado en datos del {{ .Params.fecha_tarjeta }}.
+            <div>PowerTrader AI · Precios PVPC publicados por REE · Basado en datos del {{ .Params.fecha_tarjeta }}.
+            </div>
+            <a href="https://powertrader.es" class="footer-brand">
+                <span>Un ecosistema de</span>
+                <img src="/logo-powertrader.svg" alt="PowerTrader">
+            </a>
         </footer>
     </div>
 
