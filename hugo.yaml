@@ -9,14 +9,25 @@ pagination:
 params:
   assets:
     favicon: /favicon.svg
+baseURL: "https://ahorro.powertrader.es/"
+languageCode: "es"
+title: "PowerTrader Ahorro"
+theme: "PaperMod"
+pagination:
+  pagerSize: 10
+
+
+params:
+  assets:
+    favicon: /favicon.svg
   label:
     text: " "
     icon: /logo.svg
     iconHeight: 80
   env: production
   author: PowerTrader
-  description: "Consejos y estrategias para ahorrar en tu factura de luz."
-  keywords: [PowerTrader, ahorro energético, tarifa eléctrica, PVPC]
+  description: "Precio de la luz mañana PVPC: Guía diaria de ahorro y horas baratas de electricidad en España."
+  keywords: [PowerTrader, precio luz mañana, horas baratas luz, PVPC, ahorro energético, tarifa regulada]
   defaultTheme: "dark"
   disableThemeToggle: true
   ShowReadingTime: true
@@ -24,6 +35,10 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   Canonical: true
+  enableRobotsTXT: true
+  minify:
+    disableXML: false
+    minifyOutput: true
   ShowCodeCopyButtons: true
   ShowToc: true
   TocOpen: false
