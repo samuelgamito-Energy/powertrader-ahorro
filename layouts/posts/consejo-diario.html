@@ -37,8 +37,15 @@
             background-image: radial-gradient(ellipse at 50% -10%, #1a2f4a 0%, var(--bg) 60%);
             font-family: 'Outfit', sans-serif;
             color: var(--main);
-            padding: 24px;
+            padding: 16px;
+            /* Reducido para móvil */
             min-height: 100vh
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 24px;
+            }
         }
 
         .wrap {
@@ -49,14 +56,25 @@
         /* HEADER */
         header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
+            flex-direction: column;
+            /* Columna por defecto para móvil */
+            gap: 15px;
+            padding: 20px;
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 22px;
             margin-bottom: 24px;
-            backdrop-filter: blur(16px)
+            backdrop-filter: blur(16px);
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: right;
+                padding: 15px 30px;
+            }
         }
 
         .logo img {
@@ -66,7 +84,7 @@
         }
 
         .header-right {
-            text-align: right
+            /* Eliminado text-align: right para heredar del header */
         }
 
         .header-right h2 {
@@ -124,9 +142,25 @@
         /* KPI GRID */
         .kpi-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 16px;
+            grid-template-columns: repeat(1, 1fr);
+            /* 1 columna en móvil */
+            gap: 12px;
             margin-bottom: 24px
+        }
+
+        @media (min-width: 480px) {
+            .kpi-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 columnas en tablet pequeña */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .kpi-grid {
+                grid-template-columns: repeat(4, 1fr);
+                /* 4 columnas en desktop */
+                gap: 16px;
+            }
         }
 
         .kpi {
@@ -188,9 +222,17 @@
         /* INSIGHTS */
         .insight-row {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 14px;
+            grid-template-columns: 1fr;
+            /* 1 columna en móvil */
+            gap: 12px;
             margin-bottom: 24px
+        }
+
+        @media (min-width: 768px) {
+            .insight-row {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 14px;
+            }
         }
 
         .insight {
@@ -266,9 +308,16 @@
         /* COMPACT RANKING */
         .rank-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
+            /* 1 columna en móvil */
             gap: 15px;
             margin-bottom: 24px
+        }
+
+        @media (min-width: 768px) {
+            .rank-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         .rank-box {
@@ -324,8 +373,22 @@
         /* APPLIANCE GUIDE (Exactly as original) */
         .app-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px
+            grid-template-columns: 1fr;
+            /* 1 columna en móvil */
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .app-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .app-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
         }
 
         .app-card {
@@ -439,11 +502,22 @@
             margin-top: 40px;
             padding: 20px 0;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            /* Columna en móvil */
+            gap: 20px;
             align-items: center;
+            text-align: center;
             font-size: 0.75rem;
             color: var(--dim);
             border-top: 1px solid var(--border);
+        }
+
+        @media (min-width: 768px) {
+            footer {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
         }
 
         .footer-brand {
