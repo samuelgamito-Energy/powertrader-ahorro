@@ -58,16 +58,16 @@ async def main():
         # Cargar el HTML local
         await page.goto(f"file://{template_path}")
         
-        # Inyectar los datos y disparar el renderizado (la función updateAllData ya existe en el HTML)
+        # Inyectamos los datos y disparamos el renderizado interno del HTML
         await page.evaluate(f'''() => {{
-            const f = "{fecha}";
             const p = {precios_json};
+            const f = "{fecha}";
             
-            // Actualizar badge
+            // Actualizar la fecha en el badge
             const badge = document.querySelector('.badge');
             if (badge) badge.innerText = f;
             
-            // Actualizar el objeto global y re-ejecutar el renderizado
+            // Llamar a la función de renderizado unificada del HTML
             if (typeof updateAllData === 'function') {{
                 updateAllData(p);
             }}
