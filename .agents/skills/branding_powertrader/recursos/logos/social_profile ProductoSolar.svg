@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .bg { fill: #0F172A; }
+      .text-main { fill: #FFFFFF; font-family: 'Segoe UI', sans-serif; font-weight: 800; }
+      .text-sub { fill: #22d3ee; font-family: 'Segoe UI', sans-serif; font-weight: 300; }
+    </style>
+  </defs>
+  
+  <rect width="400" height="400" class="bg"/>
+
+  <!-- Icon: Solar Roof (Centered) -->
+  <g transform="translate(110, 80) scale(3.0)">
+    <path d="M0 45 L30 15 L60 45" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 45 L30 25 L50 45" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="30" cy="15" r="4" fill="#22d3ee"/>
+  </g>
+
+   <!-- Text Bottom -->
+  <text x="200" y="320" font-size="34" text-anchor="middle" class="text-main">PRODUCTO<tspan class="text-sub">SOLAR</tspan></text>
+</svg>

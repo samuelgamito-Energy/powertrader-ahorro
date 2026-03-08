@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120">
+  <defs>
+    <style>
+      .bg { fill: #0F172A; }
+      .text-main { fill: #FFFFFF; font-family: 'Segoe UI', sans-serif; font-weight: 800; }
+      .text-accent { fill: #22d3ee; font-family: 'Segoe UI', sans-serif; font-weight: 400; }
+    </style>
+  </defs>
+  <rect width="540" height="120" class="bg" rx="10"/>
+  <g transform="translate(40, 30)">
+    <path d="M0 45 L30 15 L60 45" fill="none" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
+    <path d="M10 45 L30 25 L50 45" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="30" cy="15" r="4" fill="#22d3ee"/>
+  </g>
+  <text x="140" y="75" font-size="42" class="text-main">PRODUCTO<tspan class="text-accent">SOLAR</tspan></text>
+</svg>

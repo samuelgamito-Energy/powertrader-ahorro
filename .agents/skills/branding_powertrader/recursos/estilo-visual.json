@@ -1,0 +1,37 @@
+{
+  "marca": "PowerTrader",
+  "objetivo": "Mantener consistencia tecnológica y premium en el sector energético.",
+  "paleta": {
+    "principal": "#1d1e20",
+    "secundario": "#ffffff",
+    "acento": "#e2e2e2",
+    "fondo": "#1d1e20",
+    "superficie": "#2e2e33",
+    "texto": {
+      "principal": "#e2e2e2",
+      "secundario": "#b5b5b5"
+    }
+  },
+  "tipografia": {
+    "titulares": "Inter, sans-serif",
+    "cuerpo": "Inter, sans-serif",
+    "pesos": {
+      "normal": 400,
+      "medio": 500,
+      "negrita": 700
+    }
+  },
+  "identificadores_emoji": {
+    "PowerTrader": "⚡",
+    "EnergyVision": "⚡",
+    "Energyflash": "⚡",
+    "Solar": "☀️",
+    "Tech": "🔬",
+    "Ahorro": "💡",
+    "PowerRadar": "📡"
+  },
+  "activos": {
+    "logos": "recursos/logos/",
+    "estilo": "Minimalista, tecnológico, alto contraste"
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "marca": "Alumbra",
+    "objetivo": "Facilitar una transición ecológica auténtica a través de soluciones sostenibles y transparentes.",
+    "concepto": "El calor y la cercanía de la llama que ilumina.",
+    "paleta": {
+        "principal": "#4F1E50",
+        "nombre_principal": "Morado Corporativo",
+        "secundario": "#CE326B",
+        "nombre_secundario": "Rosa Corporativo",
+        "fondo": "#ffffff",
+        "superficie": "#f5f5f5",
+        "texto": {
+            "destacados": "#4F1E50",
+            "cuerpo": "#000000",
+            "secundario": "#595959"
+        }
+    },
+    "tipografia": {
+        "documentos": "Aptos",
+        "presentaciones": "Avenir Next",
+        "alternativa_estandar": "Arial",
+        "pesos": {
+            "normal": "regular",
+            "cursiva": "italic",
+            "negrita": "bold"
+        },
+        "tamanos_recomendados": {
+            "destacados_introduccion": "12pt",
+            "textos_corridos": "10pt"
+        }
+    },
+    "identificadores": {
+        "eslogan": "Energía verde y con actitud",
+        "iconografia": "Elementos orgánicos, luz, llamas estilizadas, naturaleza"
+    },
+    "activos": {
+        "logos": "recursos/logos/",
+        "estilo": "Humano, profesional, tecnológico pero cercano"
+    }
+}

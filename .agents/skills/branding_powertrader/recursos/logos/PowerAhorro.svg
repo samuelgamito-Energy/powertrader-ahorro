@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120">
+  <defs>
+    <style>
+      .bg { fill: #0F172A; }
+      .text-main { fill: #FFFFFF; font-family: 'Segoe UI', sans-serif; font-weight: 800; }
+      .text-accent { fill: #22d3ee; font-family: 'Segoe UI', sans-serif; font-weight: 300; }
+    </style>
+  </defs>
+  <rect width="500" height="120" class="bg" rx="10"/>
+  <g transform="translate(60, 60)">
+    <!-- Battery outline -->
+    <rect x="-20" y="-35" width="40" height="70" fill="none" stroke="#FFFFFF" stroke-width="4" rx="4"/>
+    <rect x="-8" y="-45" width="16" height="10" fill="#FFFFFF" rx="2"/>
+    <!-- Efficient load (only bottom lit) -->
+    <rect x="-14" y="15" width="28" height="14" fill="#22d3ee" rx="2">
+       <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <text x="130" y="75" font-size="45" class="text-main">POWER<tspan class="text-accent">AHORRO</tspan></text>
+</svg>

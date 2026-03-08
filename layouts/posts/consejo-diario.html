@@ -724,18 +724,22 @@
         // APPLIANCE GUIDE
         const spreadEur = (peakRangeAvg - valleyRangeAvg) / 1000;
         const apps = [
-            { icon: '🫧', name: 'Lavadora', power: '1.0 kWh', kwh: 1.0, freq: 250 },
+            { icon: '🫧', name: 'Lavadora', power: '1.2 kWh', kwh: 1.2, freq: 250 },
             { icon: '💨', name: 'Secadora', power: '2.5 kWh', kwh: 2.5, freq: 150 },
-            { icon: '🍽️', name: 'Lavavajillas', power: '1.2 kWh', kwh: 1.2, freq: 300 },
-            { icon: '🍳', name: 'Horno', power: '2.0 kWh', kwh: 2.0, freq: 100 },
-            { icon: '🚗', name: 'Coche Eléctrico', power: '40 kWh', kwh: 40, freq: 52 },
-            { icon: '🌡️', name: 'Climatización (HVAC)', power: '1.5 kWh/h', kwh: 1.5, freq: 1000 }
+            { icon: '🍽️', name: 'Lavavajillas', power: '1.0 kWh', kwh: 1.0, freq: 300 },
+            { icon: '🍳', name: 'Horno', power: '2.3 kWh', kwh: 2.3, freq: 120 },
+            { icon: '🚗', name: 'Vehículo EV', power: '40 kWh', kwh: 40, freq: 52 },
+            { icon: '🌡️', name: 'Clima/AC', power: '1.5 kWh', kwh: 1.5, freq: 800 }
         ];
 
         const grid = document.getElementById('app-grid');
         apps.forEach(a => {
-            const dailySave = (a.kwh * spreadEur).toFixed(2);
+            const valleyCost = (a.kwh * valleyRangeAvg / 1000).toFixed(2);
+            const solarCost = (a.kwh * solarAvg / 1000).toFixed(2);
+            const peakCost = (a.kwh * peakRangeAvg / 1000).toFixed(2);
+            const dailySave = (a.kwh * (peakRangeAvg - solarAvg) / 1000).toFixed(2);
             const annualSave = (dailySave * a.freq).toFixed(0);
+
             const card = document.createElement('div');
             card.className = 'app-card';
             card.innerHTML = `
@@ -746,19 +750,19 @@
             <div class="window best">
                 <div class="window-dot dot-green"></div>
                 <div class="window-info"><div class="window-time">0h–7h</div><div class="window-label">Valle Nocturno</div></div>
-                <div class="window-price green">${fmt(valleyRangeAvg)}€</div>
+                <div class="window-price green">${valleyCost}€</div>
             </div>
             <div class="window mid">
                 <div class="window-dot dot-yellow"></div>
                 <div class="window-info"><div class="window-time">10h–14h</div><div class="window-label">Valle Solar</div></div>
-                <div class="window-price yellow">${fmt(solarAvg)}€</div>
+                <div class="window-price yellow">${solarCost}€</div>
             </div>
             <div class="window worst">
                 <div class="window-dot dot-red"></div>
                 <div class="window-info"><div class="window-time">19h–22h</div><div class="window-label">Franja Punta</div></div>
-                <div class="window-price red">${fmt(peakRangeAvg)}€</div>
+                <div class="window-price red">${peakCost}€</div>
             </div>
-            <div class="savings-tag">Ahorro Uso: ${dailySave}€ · Ahorro Año: ${annualSave}€</div>
+            <div class="savings-tag">Ahorro Uso vs Punta: ${dailySave}€ · Ahorro Año: ${annualSave}€</div>
         </div>`;
             grid.appendChild(card);
         });

@@ -678,12 +678,23 @@
 
             // 4. Actualizar Precios en Electrodomésticos (Aproximados por tramo)
             const appPrices = document.querySelectorAll('.app-item .p');
-            appPrices.forEach((el, idx) => {
-                if (el.parentElement.classList.contains('b')) {
-                    el.innerText = `~${Math.round(solarAvg)}€`;
-                } else {
-                    el.innerText = `~${Math.round(nightPuntaAvg)}€`;
-                }
+            const appsData = [
+                { kwh: 1.2 }, // Lavadora
+                { kwh: 2.5 }, // Secadora
+                { kwh: 1.0 }, // Lavavajillas
+                { kwh: 40.0 }, // Vehículo EV
+                { kwh: 2.3 }, // Horno/Cocina
+                { kwh: 1.5 }  // Clima/AC
+            ];
+
+            let appIdx = 0;
+            const items = document.querySelectorAll('.app-card');
+            items.forEach((card, i) => {
+                const kwh = appsData[i].kwh;
+                const bPrice = card.querySelector('.app-item.b .p');
+                const wPrice = card.querySelector('.app-item.w .p');
+                if (bPrice) bPrice.innerText = `~${(kwh * solarAvg / 1000).toFixed(2)}€`;
+                if (wPrice) wPrice.innerText = `~${(kwh * nightPuntaAvg / 1000).toFixed(2)}€`;
             });
 
             // 5. Renderizar Gráfico
