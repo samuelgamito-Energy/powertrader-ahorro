@@ -5,18 +5,6 @@ theme: "PaperMod"
 pagination:
   pagerSize: 10
 
-
-params:
-  assets:
-    favicon: /favicon.svg
-baseURL: "https://ahorro.powertrader.es/"
-languageCode: "es"
-title: "PowerTrader Ahorro"
-theme: "PaperMod"
-pagination:
-  pagerSize: 10
-
-
 params:
   assets:
     favicon: /favicon.svg
