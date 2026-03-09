@@ -471,7 +471,7 @@
 
         <!-- CHART -->
         <div class="card-main">
-            <div class="title-sec">Perfil Horario PVPC — 01/03/2026</div>
+            <div class="title-sec" id="perfil-horario-title">Perfil Horario PVPC — 00/00/0000</div>
             <div class="chart-wrap">
                 <canvas id="hourlyChart"></canvas>
             </div>
@@ -649,7 +649,10 @@
 
             const ahorroPct = Math.round(((maxVal - solarAvg) / maxVal) * 100);
 
-            // 1. Actualizar IDEA CLAVE
+            // 1. Actualizar IDEA CLAVE y Títulos
+            const cardDate = document.querySelector('.badge').innerText.split(' · ')[0]; // Extraer solo la fecha
+            document.getElementById('perfil-horario-title').innerText = `Perfil Horario PVPC — ${cardDate}`;
+
             document.querySelector('.idea-text').innerHTML = `
                 Hoy un <strong>valle solar excelente</strong> de <strong>${fmt(solarAvg)} €</strong> (10h-14h). 
                 Evita la noche (${maxHour}h) a <strong>${fmt(maxVal)} €</strong> 
