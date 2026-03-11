@@ -31,8 +31,8 @@ def get_latest_post_data():
     fecha_match = re.search(r'fecha_tarjeta:\s*"(.*?)"', content)
     fecha = fecha_match.group(1) if fecha_match else "Fecha desconocida"
     
-    # Extraer precios_array
-    precios_match = re.search(r'precios_array:\s*(\[.*?\])', content)
+    # Extraer precios_array (puede venir como literal [1,2] o como string "[1,2]" por errores de GAS)
+    precios_match = re.search(r'precios_array:\s*\"?(\[.*?\])\"?', content)
     precios_json = precios_match.group(1) if precios_match else "[]"
     
     return fecha, precios_json
