@@ -1,5 +1,6 @@
 baseURL: "https://ahorro.powertrader.es/"
-languageCode: "es"
+languageCode: "es-es"
+defaultContentLanguage: "es"
 title: "PowerTrader Ahorro"
 theme: "PaperMod"
 pagination:
@@ -55,17 +56,14 @@ menu:
       name: "Artículos"
       url: "/posts/"
       weight: 20
-    - identifier: "sobre"
-      name: "Sobre"
-      url: "/about/"
-      weight: 30
-    - identifier: "buscar"
-      name: "🔍"
-      url: "/search/"
-      weight: 40
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+sitemap:
+  changefreq: "daily"
+  priority: 0.8
+  filename: "sitemap.xml"
